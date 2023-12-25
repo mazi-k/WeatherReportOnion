@@ -2,95 +2,110 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="@dimen/margin_medium">
+    android:layout_margin="@dimen/margin_medium"
+    android:orientation="vertical">
 
-    <TextView
-        style="@style/TextAppearance.AppCompat.TitleMini"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|top"
-        android:layout_marginVertical="@dimen/margin_large"
-        android:text="@string/add_thing" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/descriptionTextField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/description"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.MyBaseField">
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:layout_margin="@dimen/margin_medium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
-        android:textColor="@color/black"
-        android:text="@string/season"/>
-
-    <Spinner
-        android:id="@+id/seasonSpinner"
-        style="@style/Base.Widget.AppCompat.Spinner.MySpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:spinnerMode="dialog"
-        android:entries="@array/seasons"/>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/temperatureTextField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/temperature"
-        android:layout_marginTop="@dimen/margin_small"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.MyBaseField">
-        <com.google.android.material.textfield.TextInputEditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableEnd="@drawable/ic_celsius_degrees"/>
-    </com.google.android.material.textfield.TextInputLayout>
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_margin="@dimen/margin_medium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
-        android:textColor="@color/black"
-        android:text="@string/category"/>
+            <TextView
+                style="@style/TextAppearance.AppCompat.TitleMini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginVertical="@dimen/margin_large"
+                android:text="@string/add_thing" />
 
-    <Spinner
-        android:id="@+id/categorySpinner"
-        style="@style/Base.Widget.AppCompat.Spinner.MySpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:spinnerMode="dialog"
-        android:entries="@array/categories"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descriptionTextField"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.MyBaseField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/description">
 
-    <TextView
-        android:layout_margin="@dimen/margin_medium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
-        android:textColor="@color/black"
-        android:text="@string/style"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <Spinner
-        android:id="@+id/styleSpinner"
-        style="@style/Base.Widget.AppCompat.Spinner.MySpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:spinnerMode="dialog"
-        android:entries="@array/styles"/>
+            <TextView
+                style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:text="@string/season"
+                android:textColor="@color/black" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/addButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_large"
-        android:text="@string/add"
-        style="@style/Widget.MaterialComponents.Button.MyButton"/>
+            <Spinner
+                android:id="@+id/seasonSpinner"
+                style="@style/Base.Widget.AppCompat.Spinner.MySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/seasons"
+                android:spinnerMode="dialog" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/temperatureTextField"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.MyBaseField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:hint="@string/temperature">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_celsius_degrees" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:text="@string/category"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/categorySpinner"
+                style="@style/Base.Widget.AppCompat.Spinner.MySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/categories"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:text="@string/style"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/styleSpinner"
+                style="@style/Base.Widget.AppCompat.Spinner.MySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/styles"
+                android:spinnerMode="dialog" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addButton"
+                style="@style/Widget.MaterialComponents.Button.MyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:text="@string/add" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

@@ -5,6 +5,7 @@
     android:layout_margin="@dimen/margin_medium"
     android:orientation="vertical">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -66,6 +67,7 @@
 
 
     <LinearLayout
+        android:id="@+id/wardrobeRedirectButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -76,7 +78,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginHorizontal="@dimen/margin_large"
             android:layout_marginVertical="@dimen/margin_large"
-            android:src="@drawable/hanger"/>
+            android:src="@drawable/hanger" />
 
         <TextView
             style="@style/TextAppearance.AppCompat.TitleMini"
@@ -88,11 +90,10 @@
             android:textStyle="normal" />
 
         <ImageView
-            android:id="@+id/wardrobeRedirectButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_medium"
             android:src="@drawable/arrow_right" />
 
     </LinearLayout>

@@ -28,13 +28,10 @@ class FiltersFragment: Fragment() {
     }
 
     private fun initElements() {
-        binding
-    }
-
-    private fun addFragment(container: Int, fragment: Fragment) {
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(container, fragment)
-            .addToBackStack(null)
-            .commit()
+        binding.addButton.setOnClickListener {
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, MyWardrobeFragment())
+                .commit()
+        }
     }
 }

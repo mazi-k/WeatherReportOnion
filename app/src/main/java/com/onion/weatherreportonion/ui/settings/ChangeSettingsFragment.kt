@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.onion.weatherreportonion.R
 import com.onion.weatherreportonion.databinding.FragmentChangeSettingsBinding
+import com.onion.weatherreportonion.ui.profile.MyProfileFragment
 
 class ChangeSettingsFragment: Fragment() {
 
@@ -28,14 +29,12 @@ class ChangeSettingsFragment: Fragment() {
     }
 
     private fun initElements() {
-        binding
-    }
-
-    private fun addFragment(container: Int, fragment: Fragment) {
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(container, fragment)
-            .addToBackStack(null)
-            .commit()
+        binding.saveButton.setOnClickListener {
+            requireActivity().supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.fragment_container, SettingsFragment())
+                .commit()
+        }
     }
 
 }

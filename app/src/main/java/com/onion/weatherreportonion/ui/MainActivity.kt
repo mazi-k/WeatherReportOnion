@@ -21,15 +21,13 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        startFragment(R.id.fragment_container, WeatherReportFragment())
-
         initBottomNavigationMenu()
 
+        startFragment(R.id.fragment_container, WeatherReportFragment())
     }
 
     private fun initBottomNavigationMenu() {
-        binding.bottomNavigationMenu?.setOnItemSelectedListener { item: MenuItem ->
+        binding.bottomNavigationMenu.setOnItemSelectedListener { item: MenuItem ->
             run {
                 fragmentMap[item.itemId]?.let { addFragment(R.id.fragment_container, it) }
             }

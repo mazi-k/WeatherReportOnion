@@ -20,7 +20,7 @@ class RegistrationActivity: AppCompatActivity() {
 
     private fun initElements() {
         binding.loginRedirect.setOnClickListener {
-            startActivity(Intent(this, RegistrationActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
         binding.signupButton.setOnClickListener { enter() }

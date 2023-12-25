@@ -30,12 +30,4 @@ class FriendsFeedFragment: Fragment() {
     private fun initElements() {
         binding.friendsFeedRecyclerView
     }
-
-    private fun addFragment(container: Int, fragment: Fragment) {
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(container, fragment)
-            .addToBackStack(null)
-            .commit()
-    }
-
 }

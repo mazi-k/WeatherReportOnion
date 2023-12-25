@@ -28,14 +28,15 @@ class UserProfileFragment: Fragment() {
     }
 
     private fun initElements() {
-        binding
-    }
+        binding.unfollowButton.visibility = View.GONE
+        binding.followButton.setOnClickListener {
+            binding.unfollowButton.visibility = View.VISIBLE
+            binding.followButton.visibility = View.GONE
+        }
 
-    private fun addFragment(container: Int, fragment: Fragment) {
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(container, fragment)
-            .addToBackStack(null)
-            .commit()
+        binding.unfollowButton.setOnClickListener {
+            binding.followButton.visibility = View.VISIBLE
+            binding.unfollowButton.visibility = View.GONE
+        }
     }
-
 }
