@@ -8,6 +8,12 @@
     <string name="sign_up">Зарегистрироваться</string>
     <string name="or_sign_in_with">или войдите через</string>
     <string name="already_have_account">Уже есть аккаунт?</string>
+
+    <string name="log_in">Вход</string>
+    <string name="forget_password"><u>Забыли пароль?</u></string>
+    <string name="dont_have_account_yet">Ещё нет аккаунта?</string>
+    <string name="create_account"><u>Создать аккаунт?</u></string>
+
     <string name="enter">Войти</string>
     <string name="main">Главная</string>
     <string name="weather">Погода</string>
