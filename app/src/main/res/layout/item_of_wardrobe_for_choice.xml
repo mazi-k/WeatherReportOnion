@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium"
+    android:backgroundTint="@color/light_purple"
+    app:cardCornerRadius="@dimen/corner_radius"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_medium">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/itemName"
+                    style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/some_name_item_wardrobe"/>
+
+                <TextView
+                    android:id="@+id/seasonName"
+                    style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:text="@string/winter"/>
+
+                <TextView
+                    android:id="@+id/temperature"
+                    style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:text="@string/some_temp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/categoryName"
+                style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/outerwear"/>
+
+            <TextView
+                android:id="@+id/styleName"
+                style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/style_neutral"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/checked_checkbox"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:padding="@dimen/margin_small"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

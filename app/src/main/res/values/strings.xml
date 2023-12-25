@@ -1,3 +1,74 @@
 <resources>
     <string name="app_name">WeatherReportOnion</string>
+    <string name="registration">Регистрация</string>
+    <string name="username">Имя пользователя</string>
+    <string name="email">Адрес электронной почты</string>
+    <string name="password">Пароль</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="or_sign_in_with">или войдите через</string>
+    <string name="already_have_account">Уже есть аккаунт?</string>
+    <string name="enter">Войти</string>
+    <string name="main">Главная</string>
+    <string name="weather">Погода</string>
+    <string name="today">Сегодня</string>
+    <string name="plus1">+1</string>
+    <string name="some_weather">Ощущается как -8. Вчера было -4.</string>
+    <string name="recommendation">Рекомендации</string>
+    <string name="some_recom">Наденьте минимум 3 слоя. Так вы сможете регулировать ощущение холода</string>
+    <string name="some_card_text">cиние джинсы\nчерная футболка\nклетчатая рубашка\nсерая куртка\nзимние кроссовки</string>
+    <string name="offers">Предложения</string>
+    <string name="see_friends_feed">Посмотреть ленту друзей</string>
+    <string name="my_friends">Мои друзья</string>
+    <string name="some_name">Аня Кирова</string>
+    <string name="_1">1</string>
+    <string name="add_friends">Добавить друзей</string>
+    <string name="import_contacts">Импорт контактов</string>
+    <string name="import_vk">Добавить из ВКонтакте</string>
+    <string name="theme">Тема</string>
+    <string name="light">Светлая</string>
+    <string name="dark">Темная</string>
+    <string name="auto">Как в системе</string>
+    <string name="about_us">О приложении</string>
+    <string name="exit">Выйти</string>
+    <string name="some_name_item_wardrobe">куртка зеленая</string>
+    <string name="winter">зима</string>
+    <string name="some_temp">-10°C</string>
+    <string name="outerwear">Верхняя одежда</string>
+    <string name="style_neutral">Нейтральный</string>
+    <string name="style">Стиль</string>
+    <string name="category">Категория</string>
+    <string name="temperature">Температура</string>
+    <string name="add">Добавить</string>
+    <string name="season">Сезон</string>
+    <string name="description">Описание</string>
+    <string name="add_thing">Добавить одежду</string>
+    <string name="filters">Фильтры</string>
+    <string name="done">Готово</string>
+    <string name="clothes_selection">Подбор одежды</string>
+
+
+    <string-array name="categories">
+        <item>Верхняя одежда</item>
+        <item>Верх (кофты)</item>
+        <item>Низ (брюки)</item>
+        <item>Комбо (костюмы и платья)</item>
+        <item>Обувь</item>
+        <item>Аксессуары</item>
+    </string-array>
+
+    <string-array name="seasons">
+        <item>Зима</item>
+        <item>Демисезон</item>
+        <item>Лето</item>
+        <item>Любое</item>
+    </string-array>
+
+    <string-array name="styles">
+        <item>Повседневный</item>
+        <item>Спортивный</item>
+        <item>Праздничный</item>
+        <item>Любое</item>
+    </string-array>
+
 </resources>

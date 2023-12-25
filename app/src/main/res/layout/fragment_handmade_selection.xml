@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_medium">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.TitleMini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/clothes_selection" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemsWardrobeRecycler"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_width="match_parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/doneButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        android:text="@string/done"
+        style="@style/Widget.MaterialComponents.Button.MyButton"/>
+
+</LinearLayout>

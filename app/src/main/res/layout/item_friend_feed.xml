@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium"
+    android:backgroundTint="@color/light_purple"
+    app:cardCornerRadius="@dimen/corner_radius"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_medium">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile_plug"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/margin_medium"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_medium"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/some_name"/>
+            <TextView
+                android:id="@+id/clothesList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/some_card_text"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/likeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/outline_heart"
+            android:layout_marginStart="50dp"
+            android:layout_gravity="bottom|right"/>
+        <TextView
+            android:id="@+id/likeCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_gravity="bottom|right"
+            style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
+            android:textStyle="bold"
+            android:textColor="@color/main_purple"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
