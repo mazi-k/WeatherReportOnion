@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical"
+    android:layout_margin="@dimen/margin_small"
     android:padding="@dimen/margin_medium"
     android:backgroundTint="@color/light_purple"
     app:cardCornerRadius="@dimen/corner_radius"
