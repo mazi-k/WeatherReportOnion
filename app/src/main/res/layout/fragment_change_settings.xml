@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_medium">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_large"
+        android:src="@drawable/profile_plug" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_medium"
+        android:text="@string/changeAvatar"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/dark_purple"
+        android:layout_gravity="center_horizontal|top" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginVertical="@dimen/margin_large"
+        android:id="@+id/emailTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/changeName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.MyBaseField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/pen"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.TitleMini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="@string/changePassword"
+        android:textStyle="normal" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/oldPasswordTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/oldPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.MyBaseField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/eye_open"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/margin_medium"
+        android:id="@+id/newPasswordTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/newPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.MyBaseField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/eye_close"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/margin_medium"
+        android:id="@+id/repeatNewPasswordTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/repeatNewPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.MyBaseField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/eye_close"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/submit"
+        style="@style/Widget.MaterialComponents.Button.MyButton"/>
+
+</LinearLayout>

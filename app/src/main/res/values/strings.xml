@@ -55,7 +55,29 @@
     <string name="profile">Профиль</string>
     <string name="home">Главная</string>
     <string name="settings">Настройки</string>
-
+    <string name="follows">Подписок: 5</string>
+    <string name="followers">Подписчиков: 123</string>
+    <string name="my_wardrobe">Мой гардероб</string>
+    <string name="createRandomLook">Создать случайный образ</string>
+    <string name="createCustomLook">Собрать образ самостоятельно</string>
+    <string name="emailExample">example@email.com</string>
+    <string name="follow">Подписаться</string>
+    <string name="unfollow">Отписаться</string>
+    <string name="looks">Образы</string>
+    <string name="lookDate">12.12.2023</string>
+    <string name="changeAvatar">Сменить аватар</string>
+    <string name="submit">Подтвердить</string>
+    <string name="changeName">Сменить имя</string>
+    <string name="changePassword">Сменить пароль</string>
+    <string name="oldPassword">Старый пароль</string>
+    <string name="newPassword">Новый пароль</string>
+    <string name="repeatNewPassword">Повторите новый пароль</string>
+    <string name="lookSelection">Подбор образа</string>
+    <string name="suggestion">Предложение</string>
+    <string name="gotIt">Мне подходит!</string>
+    <string name="tryAgain">Попробовать ещё</string>
+    <string name="filtrs">Фильтры</string>
+    <string name="show">Показать</string>
 
     <string-array name="categories">
         <item>Верхняя одежда</item>
