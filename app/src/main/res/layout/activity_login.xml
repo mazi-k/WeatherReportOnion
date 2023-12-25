@@ -112,7 +112,7 @@
             android:text="@string/dont_have_account_yet"/>
 
         <TextView
-            android:id="@+id/loginRedirect"
+            android:id="@+id/signupRedirect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/blue_links"
