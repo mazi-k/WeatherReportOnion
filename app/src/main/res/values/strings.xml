@@ -52,6 +52,9 @@
     <string name="filters">Фильтры</string>
     <string name="done">Готово</string>
     <string name="clothes_selection">Подбор одежды</string>
+    <string name="profile">Профиль</string>
+    <string name="home">Главная</string>
+    <string name="settings">Настройки</string>
 
 
     <string-array name="categories">
