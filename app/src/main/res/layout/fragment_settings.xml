@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_medium">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_medium">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.TitleMini"
+                android:textStyle="normal"
+                android:text="@string/some_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile_plug"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_large" />
+
+        <ImageView
+            android:id="@+id/changeSettingsRedirectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_small"
+            android:src="@drawable/arrow_right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_large"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        style="@style/TextAppearance.AppCompat.TitleMini"
+        android:text="@string/add_friends"/>
+
+    <TextView
+        android:id="@+id/importContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_icons"
+        android:layout_marginTop="@dimen/margin_medium"
+        style="@style/TextAppearance.AppCompat.TitleMini"
+        android:textStyle="normal"
+        android:text="@string/import_contacts"/>
+
+    <TextView
+        android:id="@+id/importVK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_icons"
+        android:layout_marginTop="@dimen/margin_medium"
+        style="@style/TextAppearance.AppCompat.TitleMini"
+        android:textStyle="normal"
+        android:text="@string/import_vk"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:src="@drawable/line"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        style="@style/TextAppearance.AppCompat.TitleMini"
+        android:text="@string/theme"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTheme"
+        android:checkedButton="@+id/radio_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium">
+    <RadioButton
+        android:id="@+id/radio_button_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/light"/>
+    <RadioButton
+        android:id="@+id/radio_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/dark"/>
+    <RadioButton
+        android:id="@+id/radio_button_auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/auto"/>
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:src="@drawable/line"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/aboutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        android:text="@string/about_us"
+        style="@style/Widget.MaterialComponents.Button.MyButton"/>
+
+    <TextView
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.MaterialComponents.TextView.BaseText"
+        android:textStyle="bold"
+        android:textColor="@color/red_dangerous"
+        android:layout_gravity="center"
+        android:text="@string/exit"/>
+
+</LinearLayout>
