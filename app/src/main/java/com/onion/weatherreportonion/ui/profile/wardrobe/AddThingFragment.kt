@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.onion.weatherreportonion.R
 import com.onion.weatherreportonion.databinding.FragmentAddThingBinding
-import com.onion.weatherreportonion.databinding.FragmentSettingsBinding
 
 class AddThingFragment: Fragment() {
 
